@@ -9,8 +9,8 @@ class Roboot:
                                      password=password, port=port,
                                      cnopts=cnopts)
 
-    def ls(self:str):
-        return self.srv.listdir()
+    def ls(self, path:str):
+        return self.srv.listdir(path)
 
     def cd(self, path:str):
         self.srv.cd(path)
